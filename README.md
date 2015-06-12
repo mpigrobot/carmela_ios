@@ -21,7 +21,7 @@ the slave computer and the modified router (tp-link703N) is  TCP Server.
 
 
 ##video transmission
-use MJPG-streamer, which is installed in the modified router.the video address is http://192.168.1.1:8080/?action=stream . But in the iOS6 or later, the UIwebview can not see the dynamic video by  visiting this address directly.To solve this problem, this address is written in a html. Through the html , the UIwebview can see  real-time video.
+use MJPG-streamer, which is installed in the modified router.the video address is http://192.168.1.1:8080/?action=stream . But in the iOS6 or later, the UIwebview can not see the dynamic video by  visiting this address directly.To solve this problem, this address is written in a html. Through the html , the UIwebview can show real-time video.
 
 
 ## universality
