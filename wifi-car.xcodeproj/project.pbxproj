@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		190BE73A1AC692BC00BB7996 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190BE7391AC692BC00BB7996 /* CoreMotion.framework */; };
+		193AE8A21AB7C70A00A0E612 /* KeyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 193AE8A11AB7C70A00A0E612 /* KeyController.m */; };
+		193AE8A41AB7C99000A0E612 /* @robot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 193AE8A31AB7C99000A0E612 /* @robot.jpg */; };
+		19A879011AC43F22008B6A54 /* Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A879001AC43F22008B6A54 /* Hex.m */; };
+		19B04B3E1AB6E14100D297ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B04B3D1AB6E14100D297ED /* Foundation.framework */; };
+		19B04B401AB6E14100D297ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B04B3F1AB6E14100D297ED /* CoreGraphics.framework */; };
+		19B04B421AB6E14100D297ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B04B411AB6E14100D297ED /* UIKit.framework */; };
+		19B04B481AB6E14100D297ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19B04B461AB6E14100D297ED /* InfoPlist.strings */; };
+		19B04B4A1AB6E14100D297ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B04B491AB6E14100D297ED /* main.m */; };
+		19B04B4E1AB6E14100D297ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B04B4D1AB6E14100D297ED /* AppDelegate.m */; };
+		19B04B511AB6E14100D297ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B04B4F1AB6E14100D297ED /* Main.storyboard */; };
+		19B04B561AB6E14100D297ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19B04B551AB6E14100D297ED /* Images.xcassets */; };
+		19B04B5D1AB6E14100D297ED /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B04B5C1AB6E14100D297ED /* XCTest.framework */; };
+		19B04B5E1AB6E14100D297ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B04B3D1AB6E14100D297ED /* Foundation.framework */; };
+		19B04B5F1AB6E14100D297ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B04B411AB6E14100D297ED /* UIKit.framework */; };
+		19B04B671AB6E14100D297ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19B04B651AB6E14100D297ED /* InfoPlist.strings */; };
+		19B04B691AB6E14100D297ED /* wifi_carTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B04B681AB6E14100D297ED /* wifi_carTests.m */; };
+		19B04B731AB6E15B00D297ED /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B04B721AB6E15B00D297ED /* CFNetwork.framework */; };
+		19B04B751AB6FB0500D297ED /* @2wifi.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B04B741AB6FB0500D297ED /* @2wifi.png */; };
+		19B04B7C1AB7035600D297ED /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 19B04B771AB7035600D297ED /* Documentation.html */; };
+		19B04B7D1AB7035600D297ED /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B04B791AB7035600D297ED /* GCDAsyncSocket.m */; };
+		19B04B7E1AB7035600D297ED /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B04B7B1AB7035600D297ED /* GCDAsyncUdpSocket.m */; };
+		19B04B851AB7036000D297ED /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B04B811AB7036000D297ED /* AsyncSocket.m */; };
+		19B04B861AB7036000D297ED /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B04B831AB7036000D297ED /* AsyncUdpSocket.m */; };
+		19B04B871AB7036000D297ED /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 19B04B841AB7036000D297ED /* Documentation.html */; };
+		19B04B921AB7047F00D297ED /* GravityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B04B8F1AB7047F00D297ED /* GravityController.m */; };
+		19B04B931AB7047F00D297ED /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B04B911AB7047F00D297ED /* SettingController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19B04B601AB6E14100D297ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19B04B321AB6E14100D297ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19B04B391AB6E14100D297ED;
+			remoteInfo = "wifi-car";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		190BE7391AC692BC00BB7996 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		193AE8A01AB7C70A00A0E612 /* KeyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyController.h; sourceTree = "<group>"; };
+		193AE8A11AB7C70A00A0E612 /* KeyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyController.m; sourceTree = "<group>"; };
+		193AE8A31AB7C99000A0E612 /* @robot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "@robot.jpg"; sourceTree = "<group>"; };
+		19A878FF1AC43F22008B6A54 /* Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hex.h; sourceTree = "<group>"; };
+		19A879001AC43F22008B6A54 /* Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hex.m; sourceTree = "<group>"; };
+		19B04B3A1AB6E14100D297ED /* wifi-car.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wifi-car.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B04B3D1AB6E14100D297ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		19B04B3F1AB6E14100D297ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		19B04B411AB6E14100D297ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		19B04B451AB6E14100D297ED /* wifi-car-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wifi-car-Info.plist"; sourceTree = "<group>"; };
+		19B04B471AB6E14100D297ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19B04B491AB6E14100D297ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19B04B4B1AB6E14100D297ED /* wifi-car-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wifi-car-Prefix.pch"; sourceTree = "<group>"; };
+		19B04B4C1AB6E14100D297ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		19B04B4D1AB6E14100D297ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		19B04B501AB6E14100D297ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19B04B551AB6E14100D297ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		19B04B5B1AB6E14100D297ED /* wifi-carTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wifi-carTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B04B5C1AB6E14100D297ED /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		19B04B641AB6E14100D297ED /* wifi-carTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wifi-carTests-Info.plist"; sourceTree = "<group>"; };
+		19B04B661AB6E14100D297ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19B04B681AB6E14100D297ED /* wifi_carTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wifi_carTests.m; sourceTree = "<group>"; };
+		19B04B721AB6E15B00D297ED /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		19B04B741AB6FB0500D297ED /* @2wifi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "@2wifi.png"; sourceTree = "<group>"; };
+		19B04B771AB7035600D297ED /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		19B04B781AB7035600D297ED /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		19B04B791AB7035600D297ED /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		19B04B7A1AB7035600D297ED /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		19B04B7B1AB7035600D297ED /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		19B04B801AB7036000D297ED /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		19B04B811AB7036000D297ED /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		19B04B821AB7036000D297ED /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		19B04B831AB7036000D297ED /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		19B04B841AB7036000D297ED /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		19B04B8E1AB7047F00D297ED /* GravityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GravityController.h; path = "wifi-car/GravityController.h"; sourceTree = SOURCE_ROOT; };
+		19B04B8F1AB7047F00D297ED /* GravityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GravityController.m; path = "wifi-car/GravityController.m"; sourceTree = SOURCE_ROOT; };
+		19B04B901AB7047F00D297ED /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingController.h; path = "wifi-car/SettingController.h"; sourceTree = SOURCE_ROOT; };
+		19B04B911AB7047F00D297ED /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingController.m; path = "wifi-car/SettingController.m"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19B04B371AB6E14100D297ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190BE73A1AC692BC00BB7996 /* CoreMotion.framework in Frameworks */,
+				19B04B731AB6E15B00D297ED /* CFNetwork.framework in Frameworks */,
+				19B04B401AB6E14100D297ED /* CoreGraphics.framework in Frameworks */,
+				19B04B421AB6E14100D297ED /* UIKit.framework in Frameworks */,
+				19B04B3E1AB6E14100D297ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B04B581AB6E14100D297ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B04B5D1AB6E14100D297ED /* XCTest.framework in Frameworks */,
+				19B04B5F1AB6E14100D297ED /* UIKit.framework in Frameworks */,
+				19B04B5E1AB6E14100D297ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19B04B311AB6E14100D297ED = {
+			isa = PBXGroup;
+			children = (
+				19B04B431AB6E14100D297ED /* wifi-car */,
+				19B04B621AB6E14100D297ED /* wifi-carTests */,
+				19B04B3C1AB6E14100D297ED /* Frameworks */,
+				19B04B3B1AB6E14100D297ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19B04B3B1AB6E14100D297ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19B04B3A1AB6E14100D297ED /* wifi-car.app */,
+				19B04B5B1AB6E14100D297ED /* wifi-carTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19B04B3C1AB6E14100D297ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				190BE7391AC692BC00BB7996 /* CoreMotion.framework */,
+				19B04B721AB6E15B00D297ED /* CFNetwork.framework */,
+				19B04B3D1AB6E14100D297ED /* Foundation.framework */,
+				19B04B3F1AB6E14100D297ED /* CoreGraphics.framework */,
+				19B04B411AB6E14100D297ED /* UIKit.framework */,
+				19B04B5C1AB6E14100D297ED /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19B04B431AB6E14100D297ED /* wifi-car */ = {
+			isa = PBXGroup;
+			children = (
+				19A878FF1AC43F22008B6A54 /* Hex.h */,
+				19A879001AC43F22008B6A54 /* Hex.m */,
+				193AE8A01AB7C70A00A0E612 /* KeyController.h */,
+				193AE8A11AB7C70A00A0E612 /* KeyController.m */,
+				19B04B8E1AB7047F00D297ED /* GravityController.h */,
+				19B04B8F1AB7047F00D297ED /* GravityController.m */,
+				19B04B901AB7047F00D297ED /* SettingController.h */,
+				19B04B911AB7047F00D297ED /* SettingController.m */,
+				19B04B7F1AB7036000D297ED /* RunLoop */,
+				19B04B761AB7035600D297ED /* GCD */,
+				19B04B4C1AB6E14100D297ED /* AppDelegate.h */,
+				19B04B4D1AB6E14100D297ED /* AppDelegate.m */,
+				19B04B4F1AB6E14100D297ED /* Main.storyboard */,
+				19B04B551AB6E14100D297ED /* Images.xcassets */,
+				19B04B441AB6E14100D297ED /* Supporting Files */,
+			);
+			path = "wifi-car";
+			sourceTree = "<group>";
+		};
+		19B04B441AB6E14100D297ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				193AE8A31AB7C99000A0E612 /* @robot.jpg */,
+				19B04B741AB6FB0500D297ED /* @2wifi.png */,
+				19B04B451AB6E14100D297ED /* wifi-car-Info.plist */,
+				19B04B461AB6E14100D297ED /* InfoPlist.strings */,
+				19B04B491AB6E14100D297ED /* main.m */,
+				19B04B4B1AB6E14100D297ED /* wifi-car-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19B04B621AB6E14100D297ED /* wifi-carTests */ = {
+			isa = PBXGroup;
+			children = (
+				19B04B681AB6E14100D297ED /* wifi_carTests.m */,
+				19B04B631AB6E14100D297ED /* Supporting Files */,
+			);
+			path = "wifi-carTests";
+			sourceTree = "<group>";
+		};
+		19B04B631AB6E14100D297ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19B04B641AB6E14100D297ED /* wifi-carTests-Info.plist */,
+				19B04B651AB6E14100D297ED /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19B04B761AB7035600D297ED /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				19B04B771AB7035600D297ED /* Documentation.html */,
+				19B04B781AB7035600D297ED /* GCDAsyncSocket.h */,
+				19B04B791AB7035600D297ED /* GCDAsyncSocket.m */,
+				19B04B7A1AB7035600D297ED /* GCDAsyncUdpSocket.h */,
+				19B04B7B1AB7035600D297ED /* GCDAsyncUdpSocket.m */,
+			);
+			name = GCD;
+			path = "../../../Downloads/GCDAsyncSocket-TCP-UDP-Python-master/SocketClient-Demo/AsyncSocket/GCD";
+			sourceTree = "<group>";
+		};
+		19B04B7F1AB7036000D297ED /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				19B04B801AB7036000D297ED /* AsyncSocket.h */,
+				19B04B811AB7036000D297ED /* AsyncSocket.m */,
+				19B04B821AB7036000D297ED /* AsyncUdpSocket.h */,
+				19B04B831AB7036000D297ED /* AsyncUdpSocket.m */,
+				19B04B841AB7036000D297ED /* Documentation.html */,
+			);
+			name = RunLoop;
+			path = "../../../Downloads/GCDAsyncSocket-TCP-UDP-Python-master/SocketClient-Demo/AsyncSocket/RunLoop";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19B04B391AB6E14100D297ED /* wifi-car */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19B04B6C1AB6E14100D297ED /* Build configuration list for PBXNativeTarget "wifi-car" */;
+			buildPhases = (
+				19B04B361AB6E14100D297ED /* Sources */,
+				19B04B371AB6E14100D297ED /* Frameworks */,
+				19B04B381AB6E14100D297ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wifi-car";
+			productName = "wifi-car";
+			productReference = 19B04B3A1AB6E14100D297ED /* wifi-car.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19B04B5A1AB6E14100D297ED /* wifi-carTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19B04B6F1AB6E14100D297ED /* Build configuration list for PBXNativeTarget "wifi-carTests" */;
+			buildPhases = (
+				19B04B571AB6E14100D297ED /* Sources */,
+				19B04B581AB6E14100D297ED /* Frameworks */,
+				19B04B591AB6E14100D297ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19B04B611AB6E14100D297ED /* PBXTargetDependency */,
+			);
+			name = "wifi-carTests";
+			productName = "wifi-carTests";
+			productReference = 19B04B5B1AB6E14100D297ED /* wifi-carTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19B04B321AB6E14100D297ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = radi;
+				TargetAttributes = {
+					19B04B391AB6E14100D297ED = {
+						DevelopmentTeam = 6Y5VUDJDT3;
+					};
+					19B04B5A1AB6E14100D297ED = {
+						TestTargetID = 19B04B391AB6E14100D297ED;
+					};
+				};
+			};
+			buildConfigurationList = 19B04B351AB6E14100D297ED /* Build configuration list for PBXProject "wifi-car" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19B04B311AB6E14100D297ED;
+			productRefGroup = 19B04B3B1AB6E14100D297ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19B04B391AB6E14100D297ED /* wifi-car */,
+				19B04B5A1AB6E14100D297ED /* wifi-carTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19B04B381AB6E14100D297ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B04B561AB6E14100D297ED /* Images.xcassets in Resources */,
+				19B04B871AB7036000D297ED /* Documentation.html in Resources */,
+				19B04B481AB6E14100D297ED /* InfoPlist.strings in Resources */,
+				19B04B751AB6FB0500D297ED /* @2wifi.png in Resources */,
+				193AE8A41AB7C99000A0E612 /* @robot.jpg in Resources */,
+				19B04B7C1AB7035600D297ED /* Documentation.html in Resources */,
+				19B04B511AB6E14100D297ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B04B591AB6E14100D297ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B04B671AB6E14100D297ED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19B04B361AB6E14100D297ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A879011AC43F22008B6A54 /* Hex.m in Sources */,
+				19B04B921AB7047F00D297ED /* GravityController.m in Sources */,
+				19B04B931AB7047F00D297ED /* SettingController.m in Sources */,
+				19B04B7D1AB7035600D297ED /* GCDAsyncSocket.m in Sources */,
+				19B04B7E1AB7035600D297ED /* GCDAsyncUdpSocket.m in Sources */,
+				193AE8A21AB7C70A00A0E612 /* KeyController.m in Sources */,
+				19B04B851AB7036000D297ED /* AsyncSocket.m in Sources */,
+				19B04B4E1AB6E14100D297ED /* AppDelegate.m in Sources */,
+				19B04B4A1AB6E14100D297ED /* main.m in Sources */,
+				19B04B861AB7036000D297ED /* AsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B04B571AB6E14100D297ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B04B691AB6E14100D297ED /* wifi_carTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19B04B611AB6E14100D297ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19B04B391AB6E14100D297ED /* wifi-car */;
+			targetProxy = 19B04B601AB6E14100D297ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19B04B461AB6E14100D297ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19B04B471AB6E14100D297ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		19B04B4F1AB6E14100D297ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19B04B501AB6E14100D297ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19B04B651AB6E14100D297ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19B04B661AB6E14100D297ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19B04B6A1AB6E14100D297ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		19B04B6B1AB6E14100D297ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19B04B6D1AB6E14100D297ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wifi-car/wifi-car-Prefix.pch";
+				INFOPLIST_FILE = "wifi-car/wifi-car-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		19B04B6E1AB6E14100D297ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wifi-car/wifi-car-Prefix.pch";
+				INFOPLIST_FILE = "wifi-car/wifi-car-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		19B04B701AB6E14100D297ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wifi-car.app/wifi-car";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wifi-car/wifi-car-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "wifi-carTests/wifi-carTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		19B04B711AB6E14100D297ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wifi-car.app/wifi-car";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wifi-car/wifi-car-Prefix.pch";
+				INFOPLIST_FILE = "wifi-carTests/wifi-carTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19B04B351AB6E14100D297ED /* Build configuration list for PBXProject "wifi-car" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B04B6A1AB6E14100D297ED /* Debug */,
+				19B04B6B1AB6E14100D297ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19B04B6C1AB6E14100D297ED /* Build configuration list for PBXNativeTarget "wifi-car" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B04B6D1AB6E14100D297ED /* Debug */,
+				19B04B6E1AB6E14100D297ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19B04B6F1AB6E14100D297ED /* Build configuration list for PBXNativeTarget "wifi-carTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B04B701AB6E14100D297ED /* Debug */,
+				19B04B711AB6E14100D297ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19B04B321AB6E14100D297ED /* Project object */;
+}
