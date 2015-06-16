@@ -2,7 +2,7 @@
 
 It is the code for my thesis
 ```
-@CONFERENCE{
+@thesis{
   author =       {Leidi Zhao},
   title =        {The iOS control application of WMR},
   year =         {2015},
@@ -11,13 +11,14 @@ It is the code for my thesis
   organization = {MPIG},
 }
 ```
-Control Carmela, the MPIG robot, with iPhone or iPad.
+Controlling Carmela and Transmitting Video with iPad.
 
 ## Communication
 use CocoaAsyncSocket,it's a Asynchronous socket networking library for Mac and iOS .
 About this library.please see [CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket).
 the upper computer is TCP client.
-the slave computer and the modified router (tp-link703N) is  TCP Server.
+the modified router (tp-link703N) is  TCP Server.
+the upper computer communicates with slave computer through the modified router.
 
 
 ##video transmission
@@ -33,5 +34,5 @@ you can change the command, host and port in the setting UI.
 ##
 
 
-</br>**For more information, please contact zhaoleidi92@163.com**
+</br>**For more information, please contact  sunzuolei@gmail.com or zhaoleidi92@163.com**
 
